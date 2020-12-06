@@ -18,11 +18,15 @@ Karşılaştırma yapmak için öğretmenlere anket yaptım. 4000 kişinin üzer
  - 1 ders yaklaşık 10 saniyede eklenmiştir.
  - Ortalama verilere göre yaklaşık 10 dakika kazanılmıştır.
 
+![Sabit link ile ders oluşturma örnek performansı](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/sabit%20link.png)
+
 **2. Ayrı ayrı linkler ile ders ekleme işlemi**
 
  - Bir günlük ders ekleme işlemi 1 dakika 45 saniyede.
  - 1 ders yaklaşık 17 saniyede eklenmiştir.
  - Ortalama verilere göre yaklaşık 9,5 dakika kazanılmıştır.
+
+![Ayrı ayrı linkler ile ders oluşturma örnek performansı](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/ayr%C4%B1%20linkler.png)
 
 > Bu veriler ışığında EBABOT bir öğretmene haftalık ortalama ~1 saat kazandıracaktır.
 
