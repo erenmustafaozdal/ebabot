@@ -1,0 +1,4 @@
+python-dotenv~=0.15
+selenium~=3.141
+xlrd~=1.2
+console-menu~=0.6
