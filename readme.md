@@ -30,6 +30,16 @@ Karşılaştırma yapmak için öğretmenlere anket yaptım. 4000 kişinin üzer
 
 > Bu veriler ışığında EBABOT bir öğretmene haftalık ortalama ~1 saat kazandıracaktır.
 
+# Güncelleme
+
+> Eğer daha önce EBABOT'u bilgisayarınıza kurmadıysanız; bu adımı atlayıp aşağıdaki kurulum bölümüne geçebilirsiniz.
+
+[1. EBABOT'u İndirin](https://github.com/erenmustafaozdal/ebabot#1-ebabotu-i%CC%87ndirin) bölümünde anlatıldığı gibi EBABOT'un en son sürümünü bilgisayarınıza indirin. Sıkıştırılmış dosyadan `(.ZIP)` çıkartın.
+
+Yeni indirdiğiniz ve `main.py` dosyasının bulunduğu **ebabot-x.x** klasörü içine gidin. Bütün dosya ve klasörleri seçin. Bu dosya ve klasörleri eski **ebabot-x.x** klasörünüzün içine taşıyın ve eski dosyaları yenileriyle değiştirin.
+
+> **❗❗❗ DİKKAT: Bu işlem `.env` ayar dosyanız dışında bütün dosyaların değişmesine sebep olacaktır.** Eğer *kullanıcıları* ve *dersleri* tutmak için kullandığınız EXCEL dosyaları, `ebabot-x.x/excel templates` içindeki ilk isimlerinde ise; **onların da üzerine yazacaktır.** Onları başka bir konuma alabilir ve sonra tekrar aynı konuma taşıyabilirsiniz. **Ya da Excel dosyaları hariç taşıma işlemi yapın.**
+
 # Kurulum
 
 Kurulum aşamaları gözünüzü korkutmasın lütfen. Tek sefer yapmanız gerekiyor. Aşağıdaki adımları sırasıyla yaptığınızda çalışan bir EBABOT'unuz olacak 😊
