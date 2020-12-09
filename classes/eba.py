@@ -70,7 +70,7 @@ class EBA(object):
 
     def lessonName(self, lesson):
         self.__web.element("//*[contains(text(), 'Ders *')]/following-sibling::div[1]/div[1]").click()
-        self.__web.wait(EC.element_to_be_clickable((By.XPATH, "//*[@id='ui-select-choices-row-0-0']/*/*[text()='{}']".format(lesson['Ders']))), 5).click()
+        self.__web.wait(EC.element_to_be_clickable((By.XPATH, '//*[text()="Ders *"]/following-sibling::div//*[text()="{}"]'.format(lesson['Ders']))), 5).click()
         #self.__web.element("//*[contains(text(), '{}')]".format(lesson['Ders'])).click()
 
 
