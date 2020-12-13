@@ -94,7 +94,7 @@ class EBA(object):
         time.sleep(float(web_wait)/6)
         self.__web.wait(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Şube/Grup')]/parent::div/following-sibling::div[1]")), 5).click()
         for group in lesson['Şube/Grup'].split(","):
-            self.__web.wait(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(), '{}')]".format(group))), 5).click()
+            self.__web.wait(EC.visibility_of_element_located((By.XPATH, '//*[text()="Şube/Grup *"]/parent::div/following-sibling::div//*[contains(text(),"{}")]'.format(group))), 5).click()
             #self.__web.element("//*[contains(text(), '" + group + "')]").click()
 
 
