@@ -37,6 +37,10 @@ class EBA(object):
             self.waitForSignIn(user)
         else:
             self.__web.element("//*/input[@name=\"submitButton\"]").click()
+            time.sleep(2)
+            if self.__web.get().current_url == 'https://giris.eba.gov.tr/EBA_GIRIS/hata.jsp':
+                log('Hata sayfasına gitti. Tekrar giriş yapılacak.')
+                self.login(user)
         self.__web.wait(EC.element_to_be_clickable((By.ID, 'vc-treeleftmenu')))
         log.write("<green>EBA'ya giriş yapıldı.</>", "header")
 
