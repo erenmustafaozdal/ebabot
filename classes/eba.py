@@ -67,8 +67,13 @@ class EBA(object):
         # element = self.__web.wait(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Saat Aralığı')]/following-sibling::div[1]//option[text()='{} - {}']".format(hour, f_hour))), 5)
         element.click()
 
-    def lessonDetail(self, lesson):
+    def lessonDescription(self, lesson):
         self.__web.element("//*[contains(text(), 'Açıklama')]/following-sibling::input[1]").send_keys(lesson['Açıklama'])
+
+    def lessonApp(self, app='Zoom'):
+        self.__web.element("//*[contains(text(), 'Uygulama')]/following-sibling::select[1]//option[text()='{}']".format(app)).click()
+
+    def lessonRemoteInfo(self, lesson):
         self.__web.element("//*[contains(text(), 'Link')]/following-sibling::input[1]").send_keys(lesson['link'])
         self.__web.element("//*[contains(text(), 'Şifre')]/following-sibling::input[1]").send_keys(lesson['passcode'])
 
@@ -110,7 +115,9 @@ class EBA(object):
         self.lessonDate(lesson, xl)
         time.sleep(float(web_wait)/6)
         self.lessonHour(lesson, xl)
-        self.lessonDetail(lesson)
+        self.lessonDescription(lesson)
+        self.lessonApp()
+        self.lessonRemoteInfo(lesson)
         self.lessonName(lesson)
         time.sleep(float(web_wait)/6)
         self.lessonUnit(lesson)
