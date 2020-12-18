@@ -3,4 +3,5 @@ __pycache__/
 debug.log
 
 # Environments
+.env
 .idea
