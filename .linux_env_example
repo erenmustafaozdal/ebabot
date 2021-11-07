@@ -1,0 +1,9 @@
+#Aşağıdaki örnek dosya yollarını kendi dizin yapınıza göre düzeltiniz.
+DRIVER_PATH="/home/kullanıcı_adınız/ebabot_dosyalarınızın_bulundugu dizin/"
+USERS_EXCEL="/home/kullanıcı_adınız/ebabot_dosyalarınızın_bulundugu dizin/excell_dosyanızın_bulundugu_dizin/"
+
+WEB_HEADLESS=False
+WEB_IMPLICITLY_WAIT=3
+EBA_USER_LOGIN=False
+WEB_SIZE="max"
+# WEB_SIZE="1920,1080"

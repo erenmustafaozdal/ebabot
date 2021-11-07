@@ -4,9 +4,10 @@ import os
 
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path, encoding="UTF-8")
-
-web_profile = os.getenv("USERPROFILE") + "\\AppData\\Local\\Google\\Chrome\\User Data"
-
+if os.name == "nt":
+	web_profile = os.getenv("USERPROFILE") + "\\AppData\\Local\\Google\\Chrome\\User Data"
+if os.name == "posix":
+	web_profile = os.getenv("HOME") + "/.config/chromium/"
 users_xl = os.getenv("USERS_EXCEL")
 driver_path = os.getenv("DRIVER_PATH")
 web_headless = False if os.getenv("WEB_HEADLESS")=="" else (os.getenv("WEB_HEADLESS") == 'True')

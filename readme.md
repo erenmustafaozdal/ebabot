@@ -1,3 +1,4 @@
+
 # EBABOT'a Hoş Geldiniz!
 
 EBABOT ile başta harici canlı ders tanımlama olmak üzere; EBA ve E-okul'daki iş süreçlerini otomatikleştirmeyi hedefliyorum. Şimdilik sadece harici canlı dersler otomatik eklenip, silinebiliyor. Uygulama olarak Zoom kullanılıyor.
@@ -28,7 +29,7 @@ Karşılaştırma yapmak için öğretmenlere anket yaptım. 4000 kişinin üzer
 
 ![Ayrı ayrı linkler ile ders oluşturma örnek performansı](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/ayr%C4%B1%20linkler.png)
 
-> Bu veriler ışığında EBABOT bir öğretmene haftalık ortalama ~1 saat kazandıracaktır.
+> Bu veriler ışığında EBABOT bir öğretmene ortalama ~1 saat kazandıracaktır.
 
 # Güncelleme
 
@@ -40,11 +41,31 @@ Yeni indirdiğiniz ve `main.py` dosyasının bulunduğu **ebabot-x.x** klasörü
 
 > **❗❗❗ DİKKAT: Bu işlem `.env` ayar dosyanız dışında bütün dosyaların değişmesine sebep olacaktır.** Eğer *kullanıcıları* ve *dersleri* tutmak için kullandığınız EXCEL dosyaları, `ebabot-x.x/excel templates` içindeki ilk isimlerinde ise; **onların da üzerine yazacaktır.** Onları başka bir konuma alabilir ve sonra tekrar aynı konuma taşıyabilirsiniz. **Ya da Excel dosyaları hariç taşıma işlemi yapın.**
 
-# Kurulum
+# Windows İçin Kurulum
 
 Kurulum aşamaları gözünüzü korkutmasın lütfen. Tek sefer yapmanız gerekiyor. Aşağıdaki adımları sırasıyla yaptığınızda çalışan bir EBABOT'unuz olacak 😊
 
-### 1. EBABOT'u İndirin
+##  Otomatik kurulum
+> Not: Bu kurulum betiğinde Microsoft'un Powershell teknolojisi kullanılmaktadır. Bu betik şu an için Windows 8 ve Wİndows 10 'da çalışmaktadır. Powershell  betik dosyasını çalıştırmadan önce varsa windows güncellemelerini yapın çünkü bu güncellemeler içerisinde powershell güncellemeside olabiliyor.  İşletim sistemi güncel olmadığı  takdirde betik dosyası çalışırken hata verme olasığı yüksek.  
+#### 1. Otomatik kurulum dosyasını indirelim
+[Bu bağlantıdan ](https://downgit.github.io/#/home?url=https://github.com/ofarukuyduran/EbaBotOtomatikKurulum/blob/main/ebobotOtomatikKurulum.ps1) otomatik kurulum kurulum dosyasını indirelim. Sıkıştırılmış dosyadan `(.ZIP)` istediğiniz bir konuma çıkartın. **Tekrar hatırlatayım bu otomatik kurulumu sorunsuz bir şekilde kullanmanın keyfini çıkarmak için var olan windows güncellemelerinizi yapmanızı öneririm.** 
+
+#### 2. Otomatik Kurulum Dosyasını Çalıştıralım
+Daha önce  `(.ZIP)` çıkardığımız otomatik kurum dosyası üzerinde sağ tık yapıp açılan menüden **run with powershell** komutuna tıklayarak çalıştıralım. 
+
+#### 3.  Otomatik Kurum Dosyasına Gerekli Yetkileri Verelim 
+Bu aşamada aşağıdaki görseldeki gibi bir izin ekranı gelebilir. Eğer böyle bir ekran gelirse büyük  **A** harfine basıp akabinde **enter** tuşuna basarak gerekli yetkiyi vermemiz gerekiyor aksi taktirde kurulum gerçekleşmez.  Açılan ek iletişim penceresinde **Yes** diyerek onaylıyorsunuz. Hepsi bu kadar.  Artık arkanıza yaslanıp çayınızı, kahvenizi içebilirsiniz :) Otomatik kurulum betiği   sizin yerinize her şeyi kurup hazır hale getirecektir. Eğer otomatik kurulumda sorun yaşarsanız manuel kurulum adımlarını takip edebilirsiniz.
+![ebabot yetki ekranı](https://raw.githubusercontent.com/ofarukuyduran/ebabot/main/images/poweshell_yetki.png)
+
+#### 4. Programı Çalıştırma
+Masaüstüne oluşturan Ebabot  kısayoluna çift tıklayarak programı çalıştırabilirsiniz.
+> NOT: Programı çalıştırmadan önce [EXCEL Dosyaları](https://github.com/erenmustafaozdal/ebabot#excel-dosyalar%C4%B1) adımında anlatılanlara göre masaüstünde kısayolu oluşturulan iki excel dosyasını hazırlamanınız gerektiğini hatırlatmak isterim.  
+>
+> Sonrasında programın nasıl kullanıldığını  [Harici Dersleri Tanımlama](https://github.com/erenmustafaozdal/ebabot#harici-canl%C4%B1-dersleri-tan%C4%B1mlama)  adresinden incelemenizi öneririm.
+> **Eğer chrome driver ile ilgili hata alırsanız google chrome tayıcınızın sürümüne uygun driver'ı [Buradaki](https://github.com/erenmustafaozdal/ebabot#3-chrome-driver-i%CC%87ndirelim) yönergeye göre indirip mevcut olan chrome driver dosyasının üzerine yazdırmalısnız.**
+
+## Manuel Kurulum
+### 1.  EBABOT'u İndirin
 [https://github.com/erenmustafaozdal/ebabot/releases](https://github.com/erenmustafaozdal/ebabot/releases) adresine giderek en son sürümü bilgisayarınıza indirin. İndirdikten sonra sıkıştırılmış dosyadan çıkartın. Bilgisayarınızda istediğiniz bir konuma taşıyın.
 
 ### 2. Bilgisayarınıza Python Kurun
@@ -70,12 +91,13 @@ Bu kodu çalıştırdığınızda aşağıdaki gibi bir çıktı alıyorsanız; 
 
 ### 3. Chrome Driver İndirelim
 
-Python ile kontrol edeceğimiz Chrome tarayıcı driver'ını indirmemiz gerekiyor. [https://chromedriver.storage.googleapis.com/index.html?path=2.35](https://chromedriver.storage.googleapis.com/index.html?path=2.35) adresine giderek sistemimiz için uygun olan `chromedriver_*.zip` dosyasını indirin. İndirdiğiniz dosyayı ZIP içinden çıkarın. Lütfen bu dosyayı bildiğiniz bir yere çıkarın. Çünkü içindeki **chromedriver.exe** dosyasının yolunu EBABOT'a bildirmeniz gerekecek.
+Python ile kontrol edeceğimiz Chrome tarayıcı driver'ını indirmemiz gerekiyor. [https://chromedriver.storage.googleapis.com/index.html?path=2.35](https://chromedriver.storage.googleapis.com/index.html?path=2.35) adresine giderek sistemimiz için uygun olan (64 bit / 32 bit) `chromedriver_*.zip` dosyasını indirin. İndirdiğiniz dosyayı ZIP içinden çıkarın. Lütfen bu dosyayı bildiğiniz bir yere çıkarın. Çünkü içindeki **chromedriver.exe** dosyasının yolunu EBABOT'a bildirmeniz gerekecek.
 
-> NOT: EBABOT çalıştırıldığında Chrome tarayıcısını açmadan versiyon
-> hatası veriyorsa; yukarıdaki adresten bir üst dizine çıkın. Alt ve üst
-> versiyonları indirerek tekrar deneyin. Windows 10 ve Windows 7'de 2.35
-> versiyonu ile sorunsuz test edilmiştir.
+> NOT: EBABOT çalıştırıldığında Chrome tarayıcısını açmadan veya açtıktan sonra versiyon hatası veriyorsa **tarayıcınızın versiyonu ile uyumlu chromedriver**'ı indirmeniz gerekiyor; bunun için öncelikle 
+> 1. Chrome'un sağ üst köşesinde bulunan üç nokta üst üste düğmesinine basak( Kısayolu Alt+ F) çıkan pencerede sırasıyla Yardım >> Google Chrome Hakkında menüsüne giriyoruz. Chrome versiyonu güncel değilse güncelleyip yeniden başlatacaktır. Güncel vesiyon numarasını kenara not edelim.
+> ![Chrome Version](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/chrome_version.png)
+> 2. Yukarıdaki adresten bir üst dizine çıkın. Kendi Chrome versiyonumuzla ilgili versiyonu indirerek mevcut chromederiver.exe dosyası ile yer değiştirin. . 2.35  versiyonu Windows 10 ve Windows 7'de sorunsuz test edilmiştir.
+> ![Chrome Driver version](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/chrome_driver.png)
 
 ### 4. EBABOT Bağımlılıklarını Yükleyelim
 Her yazılımın bağımlı olduğu başka yazılımlar veya araçlar vardır. EBABOT da böyle. Öncelikle bu bağımlılıkları yüklemek gerekir.
@@ -98,7 +120,50 @@ pip install -r requirements.txt
 ```
 
 Python bağımlılıkları yükleyecektir. Eğer bir hata almadıysak işlemlerimiz başarılı bir şekilde sonuçlanmıştır. Artık EBABOT hazır. Şimdi örnek Excel dosyalarını kendimize göre düzenleyelim. Ardından EBABOT'u çalıştıralım.
+# Linux İçin Kurulum
+Bu bölümde **Pardus** ve **Ubuntu** gibi Debian tabanlı dağıtımlara nasıl kurulum yapılacağı anlatıcaktır. Dİğer dağıtımlarda mantık aynı olup sadece kodlar değişmektedir. Kodlar için ise her dağıtımın kendi dökümantasyonunu takip etmelisiniz.
+## Manuel Kurulum
+#### 1. EBABOT'u indirlim
+EBABOT'u  [https://github.com/erenmustafaozdal/ebabot/releases](https://github.com/erenmustafaozdal/ebabot/releases) adresine giderek en son sürümü bilgisayarınıza indirin. İndirdikten sonra sıkıştırılmış dosyadan çıkartın  istediğiniz bir konuma taşıyın. 
+#### 2. Gerekli Sistem Programlarını Kuralım
+Chromium tarayıcısı linux sistemlerde genelde yüklü olarak gelir. Yüklü değilse Pardus Mağaza üzerinden yükleyelim. **Ebabot'un dosyalarının olduğu dizinde** terminal ekranı açarak aşağıdaki önünde # karakteri olmayan komutları sıra ile uygulayalım:
 
+    #Linux işletim sistemlerinde Python dili varsayılan olarak kurulu gelmektedir. 
+    
+    #Önce depoyu sonrasında varolan python sürümünü güncelleyelim.
+    sudo apt update
+    sudo apt upgrade
+
+    #Ebabot'un bağımlılıklarını yüklemek için Pip kuralım
+    sudo apt-get install python3-pip
+
+    #Ebabot'un bağımlılıklarını yükleyelim. 
+    pip3 install -r requirements.txt
+    
+    #.env dosyasını oluşturalım
+    cp .linux_env_example .env
+#### 3. Chrome Driveri indirelim
+[Bu adresten](https://chromedriver.storage.googleapis.com/index.html) Chromium tarayıcınızın versiyonunuza göre chrome driverinizi indirip sıkıştırılmış vaziyetten çıkararak EBABOT dosylarının olduğu  dizinin içerisine kopyalayınız
+#### 4.   .env Dosyasının Düzenlenmesi 
+EbaBot dizininizin içinde bulunan `.env` dosyasını bir metin editörü ile açın. Aşağıdakine benzer şekilde EBABOT'un çalışması için gereken yol tanımlarını yapın. Yoldaki `home` ibareleri kısmı bütün linux dağıtımlarında sabittir. O yüzden değiştirmeyiniz.  Sonra kaydedip kapatın. `.env` dosyası ile ayrıntılara [bu bölümden](https://github.com/erenmustafaozdal/ebabot#2-şimdi-env-dosyasının-içindeki-ayarları-inceleyelim)  bakabilirsiniz 
+>Not: Eğer env dosyasını göremiyorsanız. İşletim sistemi ayarlarınızdan gizli dosyaları göster özelliği kapalıdır. Genelde içinde bulunulan dizinde  `Ctrl + H` tuş kombinasyonu ile gizli dosyalar görünür hale gelecektir. 
+
+    DRIVER_PATH="/home/kullanıcı_adınız/ebabot_dosyalarınızın_bulundugu dizin/"
+    USERS_EXCEL="/home/kullanıcı_adınız/ebabot_dosyalarınızın_bulundugu dizin/excell_dosyanızın_bulundugu_dizin/"
+    
+    WEB_HEADLESS=False
+    WEB_IMPLICITLY_WAIT=3
+    EBA_USER_LOGIN=False
+    WEB_SIZE="max"
+    # WEB_SIZE="1920,1080"
+#### 5. Programı Çalıştırma
+Ve sonuna geldik :) **EBABOT'un dosyalarının olduğu dizinde** terminal ekranı açarak aşağıdaki komutu uygulayarak çalıştırabilirsiniz. 
+
+    python3 main.py
+
+> NOT: Programı çalıştırmadan önce [EXCEL Dosyaları](https://github.com/erenmustafaozdal/ebabot#excel-dosyalar%C4%B1) adımında anlatılanlara göre excel dosyalarını hazırlamanız gerektiğini hatırlatmak isterim.  
+>
+> Sonrasında programın nasıl kullanıldığını  [Harici Ders Tanımlama](https://github.com/erenmustafaozdal/ebabot#harici-canl%C4%B1-dersleri-tan%C4%B1mlama)  adresinden incelemenizi öneririm. 
 # EXCEL Dosyaları
 
 ## `excel templates\örnek kullanıcılar.xls`
@@ -199,7 +264,7 @@ Eğer **Notepad++** veya **Sublime Text** gibi bir uygulama ile açamazsanız; o
     WEB_SIZE="max"
     # WEB_SIZE="1920,1080"
 
-Şimdi .env dosyasının içindeki ayarları inceleyelim.
+### 2. Şimdi .env dosyasının içindeki ayarları inceleyelim.
 
 |Ayar|Açıklama  |
 |--|--|
@@ -216,7 +281,7 @@ Eğer **Notepad++** veya **Sublime Text** gibi bir uygulama ile açamazsanız; o
 
 # EBABOT'u çalıştırma
 
-EBABOT'un olduğu klasörde komut satırını başlatmamız gerekiyor. Bunun için `ebabot` klasöründeyken, klasörün üstünde bulunan ve bulunduğunuz klasör yolunun (adresinin) olduğu kutucuğa dokunun. Bu kutucukta şuna benzer bir yol yazabilir: `C:\Users\Kullanıcı Adınız\Downloads\ebabot`. İşte bu kutucuktaki yolu silin. Ardından **cmd** yazın ve `enter` tuşuna basın. Bulunduğunuz klasörde çalışacak bir komut satırı açılmış olmalı.
+EBABOT'un olduğu klasörde `main.py` dosyasına çift tıklayarak veya  komut satırını başlatmamız gerekiyor. Bunun için `ebabot` klasöründeyken, klasörün üstünde bulunan ve bulunduğunuz klasör yolunun (adresinin) olduğu kutucuğa dokunun. Bu kutucukta şuna benzer bir yol yazabilir: `C:\Users\Kullanıcı Adınız\Downloads\ebabot`. İşte bu kutucuktaki yolu silin. Ardından **cmd** yazın ve `enter` tuşuna basın. Bulunduğunuz klasörde çalışacak bir komut satırı açılmış olmalı.
 
 Yukarıdaki örnek klasör yolumuzdan devam edecek olursak; komut satırında sizi şuna benzer yazılar karşılayacaktır.
 
