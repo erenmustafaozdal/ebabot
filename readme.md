@@ -55,7 +55,7 @@ Daha önce  `(.ZIP)` çıkardığımız otomatik kurum dosyası üzerinde sağ t
 
 #### 3.  Otomatik Kurum Dosyasına Gerekli Yetkileri Verelim 
 Bu aşamada aşağıdaki görseldeki gibi bir izin ekranı gelebilir. Eğer böyle bir ekran gelirse büyük  **A** harfine basıp akabinde **enter** tuşuna basarak gerekli yetkiyi vermemiz gerekiyor aksi taktirde kurulum gerçekleşmez.  Açılan ek iletişim penceresinde **Yes** diyerek onaylıyorsunuz. Hepsi bu kadar.  Artık arkanıza yaslanıp çayınızı, kahvenizi içebilirsiniz :) Otomatik kurulum betiği   sizin yerinize her şeyi kurup hazır hale getirecektir. Eğer otomatik kurulumda sorun yaşarsanız manuel kurulum adımlarını takip edebilirsiniz.
-![ebabot yetki ekranı](https://raw.githubusercontent.com/ofarukuyduran/ebabot/main/images/poweshell_yetki.png)
+![ebabot yetki ekranı](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/poweshell_yetki.PNG)
 
 #### 4. Programı Çalıştırma
 Masaüstüne oluşturan Ebabot  kısayoluna çift tıklayarak programı çalıştırabilirsiniz.
@@ -95,8 +95,11 @@ Python ile kontrol edeceğimiz Chrome tarayıcı driver'ını indirmemiz gerekiy
 
 > NOT: EBABOT çalıştırıldığında Chrome tarayıcısını açmadan veya açtıktan sonra versiyon hatası veriyorsa **tarayıcınızın versiyonu ile uyumlu chromedriver**'ı indirmeniz gerekiyor; bunun için öncelikle 
 > 1. Chrome'un sağ üst köşesinde bulunan üç nokta üst üste düğmesinine basak( Kısayolu Alt+ F) çıkan pencerede sırasıyla Yardım >> Google Chrome Hakkında menüsüne giriyoruz. Chrome versiyonu güncel değilse güncelleyip yeniden başlatacaktır. Güncel vesiyon numarasını kenara not edelim.
+
 > ![Chrome Version](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/chrome_version.png)
+
 > 2. Yukarıdaki adresten bir üst dizine çıkın. Kendi Chrome versiyonumuzla ilgili versiyonu indirerek mevcut chromederiver.exe dosyası ile yer değiştirin. . 2.35  versiyonu Windows 10 ve Windows 7'de sorunsuz test edilmiştir.
+
 > ![Chrome Driver version](https://raw.githubusercontent.com/erenmustafaozdal/ebabot/main/images/chrome_driver.png)
 
 ### 4. EBABOT Bağımlılıklarını Yükleyelim
